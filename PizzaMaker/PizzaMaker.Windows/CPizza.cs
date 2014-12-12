@@ -22,9 +22,6 @@ namespace PizzaMaker
         public CPizza(ENUMMnoznik enumpizzy)
         {
             this.Podstawa = 15;
-            
-               
-            this.Podstawa = 15;
 
             if (enumpizzy == ENUMMnoznik.MALA)
             {
