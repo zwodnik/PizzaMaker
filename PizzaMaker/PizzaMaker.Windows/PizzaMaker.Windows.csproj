@@ -120,7 +120,17 @@
     <None Include="PizzaMaker.Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\boczek_mini.png" />
+    <Content Include="Assets\ciasto_mini.png" />
+    <Content Include="Assets\kurczak_mini.png" />
     <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\oliwka_mini.png" />
+    <Content Include="Assets\papryka_mini.png" />
+    <Content Include="Assets\pieczarka_mini.png" />
+    <Content Include="Assets\pizza.png" />
+    <Content Include="Assets\salami_mini.png" />
+    <Content Include="Assets\ser_goracy.png" />
+    <Content Include="Assets\ser_mini.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
