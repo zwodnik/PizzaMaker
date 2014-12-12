@@ -10,11 +10,23 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     	<StackPanel>
     		<Grid Height="768">
+    			<Grid.RowDefinitions>
+    				<RowDefinition/>
+    				<RowDefinition/>
+    				<RowDefinition/>
+    				<RowDefinition/>
+    				<RowDefinition/>
+    				<RowDefinition/>
+    				<RowDefinition/>
+    			</Grid.RowDefinitions>
+
     			<Grid.ColumnDefinitions>
     				<ColumnDefinition Width="2*"/>
-    				<ColumnDefinition/>              
+    				<ColumnDefinition/>           
              
     			</Grid.ColumnDefinitions>
+
+
     		</Grid>
             
         </StackPanel>
