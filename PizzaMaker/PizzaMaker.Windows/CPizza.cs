@@ -42,7 +42,7 @@ namespace PizzaMaker
 
         
 
-        private int calkowity(int suma_skladnikow, int podstawa)
+        private int f_calkowity(int suma_skladnikow, int podstawa)
         {
             int suma = (int)((suma_skladnikow + podstawa) * Mnoznik);
             return suma;
