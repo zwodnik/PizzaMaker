@@ -25,6 +25,11 @@ namespace PizzaMaker
         public MainPage()
         {
             this.InitializeComponent();
+            List<CSkladniki> skladniki = new List<CSkladniki>() {
+                new CSkladniki() { Cena=1, Nazwa="pieczarki", UriMale = new Uri("ms-appx:///Assets/pieczarka_mini.png")  },
+                new CSkladniki() { Cena=1, Nazwa="ser", UriMale = new Uri("ms-appx:///Assets/ser_mini.png")  },
+            };
+            SkladnikiLV.ItemsSource = skladniki;
         }
     }
 }
