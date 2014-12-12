@@ -11,11 +11,22 @@ namespace PizzaMaker
         private int Podstawa; // Cena podstawowa pizzy
         private double Mnoznik; //pizzy
         private int calkowity; //koszt pizzy
+
+
+        int calkowity();
+        public enum ENUMMnoznik
+        {
+            MALA, DUZA, SREDNIA
+        }
+
         public CPizza()
         {
             this.Podstawa = 15;
             this.Mnoznik = 1;
+            calkowity();
         }
+
+        
 
         public int calkowity(int suma_skladnikow, int podstawa)
         {
@@ -23,9 +34,6 @@ namespace PizzaMaker
             return suma;
         }
 
-        public enum ENUMMnoznik()
-    {
-
-    }
+       
     }
 }
