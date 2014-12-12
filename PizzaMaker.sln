@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PizzaMaker", "PizzaMaker", "{91F357EC-76E7-4CA0-BB63-8A2CF21D0DF0}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PizzaMaker.Shared", "PizzaMaker\PizzaMaker.Shared\PizzaMaker.Shared.shproj", "{7D9BCE79-1435-485F-8152-DEF27D301267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaMaker.Windows", "PizzaMaker\PizzaMaker.Windows\PizzaMaker.Windows.csproj", "{592E7C54-DB2C-454E-88D0-6A298E86BDC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaMaker.WindowsPhone", "PizzaMaker\PizzaMaker.WindowsPhone\PizzaMaker.WindowsPhone.csproj", "{85C52C85-D165-45D5-8D4E-510998582932}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		PizzaMaker\PizzaMaker.Shared\PizzaMaker.Shared.projitems*{7d9bce79-1435-485f-8152-def27d301267}*SharedItemsImports = 13
+		PizzaMaker\PizzaMaker.Shared\PizzaMaker.Shared.projitems*{592e7c54-db2c-454e-88d0-6a298e86bdc4}*SharedItemsImports = 4
+		PizzaMaker\PizzaMaker.Shared\PizzaMaker.Shared.projitems*{85c52c85-d165-45d5-8d4e-510998582932}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Debug|ARM.ActiveCfg = Debug|ARM
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Debug|ARM.Build.0 = Debug|ARM
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Debug|ARM.Deploy.0 = Debug|ARM
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Debug|x64.ActiveCfg = Debug|x64
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Debug|x64.Build.0 = Debug|x64
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Debug|x64.Deploy.0 = Debug|x64
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Debug|x86.ActiveCfg = Debug|x86
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Debug|x86.Build.0 = Debug|x86
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Debug|x86.Deploy.0 = Debug|x86
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Release|ARM.ActiveCfg = Release|ARM
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Release|ARM.Build.0 = Release|ARM
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Release|ARM.Deploy.0 = Release|ARM
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Release|x64.ActiveCfg = Release|x64
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Release|x64.Build.0 = Release|x64
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Release|x64.Deploy.0 = Release|x64
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Release|x86.ActiveCfg = Release|x86
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Release|x86.Build.0 = Release|x86
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4}.Release|x86.Deploy.0 = Release|x86
+		{85C52C85-D165-45D5-8D4E-510998582932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85C52C85-D165-45D5-8D4E-510998582932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85C52C85-D165-45D5-8D4E-510998582932}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{85C52C85-D165-45D5-8D4E-510998582932}.Debug|ARM.ActiveCfg = Debug|ARM
+		{85C52C85-D165-45D5-8D4E-510998582932}.Debug|ARM.Build.0 = Debug|ARM
+		{85C52C85-D165-45D5-8D4E-510998582932}.Debug|ARM.Deploy.0 = Debug|ARM
+		{85C52C85-D165-45D5-8D4E-510998582932}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{85C52C85-D165-45D5-8D4E-510998582932}.Debug|x86.ActiveCfg = Debug|x86
+		{85C52C85-D165-45D5-8D4E-510998582932}.Debug|x86.Build.0 = Debug|x86
+		{85C52C85-D165-45D5-8D4E-510998582932}.Debug|x86.Deploy.0 = Debug|x86
+		{85C52C85-D165-45D5-8D4E-510998582932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85C52C85-D165-45D5-8D4E-510998582932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85C52C85-D165-45D5-8D4E-510998582932}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{85C52C85-D165-45D5-8D4E-510998582932}.Release|ARM.ActiveCfg = Release|ARM
+		{85C52C85-D165-45D5-8D4E-510998582932}.Release|ARM.Build.0 = Release|ARM
+		{85C52C85-D165-45D5-8D4E-510998582932}.Release|ARM.Deploy.0 = Release|ARM
+		{85C52C85-D165-45D5-8D4E-510998582932}.Release|x64.ActiveCfg = Release|Any CPU
+		{85C52C85-D165-45D5-8D4E-510998582932}.Release|x86.ActiveCfg = Release|x86
+		{85C52C85-D165-45D5-8D4E-510998582932}.Release|x86.Build.0 = Release|x86
+		{85C52C85-D165-45D5-8D4E-510998582932}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D9BCE79-1435-485F-8152-DEF27D301267} = {91F357EC-76E7-4CA0-BB63-8A2CF21D0DF0}
+		{592E7C54-DB2C-454E-88D0-6A298E86BDC4} = {91F357EC-76E7-4CA0-BB63-8A2CF21D0DF0}
+		{85C52C85-D165-45D5-8D4E-510998582932} = {91F357EC-76E7-4CA0-BB63-8A2CF21D0DF0}
+	EndGlobalSection
+EndGlobal
