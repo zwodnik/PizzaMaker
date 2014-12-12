@@ -8,8 +8,17 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    	<StackPanel>
+    	<StackPanel HorizontalAlignment="Left" Width="910">
     		<Grid Height="768">
+    			<Grid.RowDefinitions>
+    				<RowDefinition/>
+    				<RowDefinition Height="5*"/>
+    				<RowDefinition/>
+    			</Grid.RowDefinitions>
+    		</Grid>
+    	</StackPanel>
+    	<StackPanel Margin="910,0,10,0">
+    		<Grid Height="770" Margin="0,0,0,0">
     			<Grid.RowDefinitions>
     				<RowDefinition/>
     				<RowDefinition/>
@@ -19,16 +28,7 @@
     				<RowDefinition/>
     				<RowDefinition/>
     			</Grid.RowDefinitions>
-
-    			<Grid.ColumnDefinitions>
-    				<ColumnDefinition Width="2*"/>
-    				<ColumnDefinition/>           
-             
-    			</Grid.ColumnDefinitions>
-
-
     		</Grid>
-            
-        </StackPanel>
+    	</StackPanel>
     </Grid>
 </Page>
