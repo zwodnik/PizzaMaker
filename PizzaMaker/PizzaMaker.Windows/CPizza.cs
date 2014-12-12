@@ -13,22 +13,39 @@ namespace PizzaMaker
         private int calkowity; //koszt pizzy
 
 
-        int calkowity();
+        
         public enum ENUMMnoznik
         {
             MALA, DUZA, SREDNIA
         }
 
-        public CPizza()
+        public CPizza(ENUMMnoznik enumpizzy)
         {
             this.Podstawa = 15;
-            this.Mnoznik = 1;
-            calkowity();
+            
+               
+            this.Podstawa = 15;
+
+            if (enumpizzy == ENUMMnoznik.MALA)
+            {
+                this.Mnoznik = 1;
+            }
+            if (enumpizzy == ENUMMnoznik.SREDNIA)
+            {
+                this.Mnoznik = 1.2;
+            }
+            if (enumpizzy == ENUMMnoznik.DUZA)
+            {
+                this.Mnoznik = 1.4;
+            }
+
+            //this.Mnoznik = 1;
+            //calkowity(); //nie ma jeszcze listviev
         }
 
         
 
-        public int calkowity(int suma_skladnikow, int podstawa)
+        private int calkowity(int suma_skladnikow, int podstawa)
         {
             int suma = (int)((suma_skladnikow + podstawa) * Mnoznik);
             return suma;
