@@ -64,13 +64,26 @@ namespace PizzaMaker
       
         private void Skladniki_changed_tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
-             var item = (sender as ListView).SelectedItem;
+             var item = (sender as ListView).SelectedItems;
              if (item != null)
                  {
-                     var item2 = (sender as ListViewItem);
-                     //CPizzaObject.SumaSkladnikow += item2;
-                     TekstCeny.Text = "Cena całości: " + CPizzaObject.calkowity.ToString();
+
+
+                     int suma = 0;
+                    foreach(CSkladniki skadnik in item){
+                        suma += skadnik.Cena;
+                    }
+
+                    CPizzaObject.SumaSkladnikow = suma;
+                    CPizzaObject.f_calkowity(CPizzaObject.Podstawa);
+                    TekstCeny.Text = "Cena całości: " + CPizzaObject.calkowity.ToString();
+
+                     /*var item2 = (CSkladniki)item;
+                     CPizzaObject.SumaSkladnikow += item2.Cena;
+                     CPizzaObject.f_calkowity(CPizzaObject.Podstawa);
+                     TekstCeny.Text = "Cena całości: " + CPizzaObject.calkowity.ToString();*/
                  }
         }
+
     }
 }

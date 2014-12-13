@@ -8,7 +8,7 @@ namespace PizzaMaker
 {
     class CPizza
     {
-        private int Podstawa = 15; // Cena podstawowa pizzy
+        public int Podstawa = 15; // Cena podstawowa pizzy
         public double Mnoznik; //pizzy
         public int calkowity; //koszt pizzy
         public int SumaSkladnikow = 0;
@@ -41,10 +41,10 @@ namespace PizzaMaker
 
         
 
-        private int f_calkowity(int podstawa)
+        public void f_calkowity(int podstawa)
         {
-            int suma = (int)((SumaSkladnikow + podstawa) * Mnoznik);
-            return suma;
+            calkowity = (int)((SumaSkladnikow + podstawa) * Mnoznik);
+            
         }
 
         public void ZmianaPizzy(ENUMMnoznik enumpizzy)
@@ -64,7 +64,7 @@ namespace PizzaMaker
                 this.Mnoznik = 1.4;
             }
 
-            calkowity = f_calkowity(Podstawa);
+            f_calkowity(Podstawa);
             // f_calkowity(); //nie ma jeszcze listviev
         }
 
