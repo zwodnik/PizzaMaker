@@ -17,7 +17,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     	<StackPanel HorizontalAlignment="Left" Width="910">
-    		<Grid Height="768">
+    		<Grid x:Name="GlownyGrid" Height="768">
     			<Grid.RowDefinitions>
     				<RowDefinition/>
     				<RowDefinition Height="5*"/>
@@ -28,6 +28,13 @@
                 <RadioButton x:Name="RadioDuza" Content="Duże ciasto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="597,32,0,0" Height="47" Width="313" FontSize="32" Checked="Duze_ciasto_checked"/>
     			<TextBlock x:Name="TekstCeny" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Cena całości: " VerticalAlignment="Top" Width="890" Height="89" FontSize="64"/>
                 <Image x:Name="Pizza_base" HorizontalAlignment="Left" Height="549" VerticalAlignment="Top" Width="910" Grid.Row="1" Source="ms-appx:///Assets/pizza.png"/>
+                <Image x:Name="pieczarki" HorizontalAlignment="Left" Height="549" VerticalAlignment="Top" Width="910" Grid.Row="1" Source="ms-appx:///Assets/pieczarki.png"/>
+                <Image x:Name="ser" HorizontalAlignment="Left" Height="549" VerticalAlignment="Top" Width="910" Grid.Row="1" Source="ms-appx:///Assets/ser1.png"/>
+                <Image x:Name="boczek" HorizontalAlignment="Left" Height="549" VerticalAlignment="Top" Width="910" Grid.Row="1" Source="ms-appx:///Assets/boczek.png"/>
+                <Image x:Name="oliwki" HorizontalAlignment="Left" Height="549" VerticalAlignment="Top" Width="910" Grid.Row="1" Source="ms-appx:///Assets/oliwki.png"/>
+                <Image x:Name="salami" HorizontalAlignment="Left" Height="549" VerticalAlignment="Top" Width="910" Grid.Row="1" Source="ms-appx:///Assets/salami.png"/>
+                <Image x:Name="kurczak" HorizontalAlignment="Left" Height="549" VerticalAlignment="Top" Width="910" Grid.Row="1" Source="ms-appx:///Assets/kurczak.png"/>
+                <Image x:Name="papryka" HorizontalAlignment="Left" Height="549" VerticalAlignment="Top" Width="910" Grid.Row="1" Source="ms-appx:///Assets/papryka.png"/>
     		</Grid>
     	</StackPanel>
     	<StackPanel Margin="910,0,10,0">
