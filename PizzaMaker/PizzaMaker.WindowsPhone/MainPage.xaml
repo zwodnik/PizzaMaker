@@ -5,10 +5,49 @@
     xmlns:local="using:PizzaMaker"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
+	<Page.Resources>
+		<DataTemplate x:Key="Skladniki">
+			<StackPanel Height="100" Width="500" Orientation="Horizontal">
+                <Image Width="100" Source="{Binding UriMale}"/>
+                <TextBlock TextWrapping="Wrap" Text="{Binding Nazwa}" FontFamily="A.C.M.E. Explosive" FontSize="28" VerticalAlignment="Center" Width="400" HorizontalAlignment="Center" Margin ="50,0,0,0"/>
+			</StackPanel>
+		</DataTemplate>
+	</Page.Resources>
 
-    <Grid>
-
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    	<StackPanel HorizontalAlignment="Left" Width="667">
+    		<Grid x:Name="GlownyGrid" Height="768">
+    			<Grid.ColumnDefinitions>
+    				<ColumnDefinition Width="505*"/>
+    				<ColumnDefinition Width="162*"/>
+    			</Grid.ColumnDefinitions>
+    			<Grid.RowDefinitions>
+    				<RowDefinition/>
+    				<RowDefinition Height="5*"/>
+    				<RowDefinition/>
+    			</Grid.RowDefinitions>
+    			<RadioButton x:Name="RadioMala" Content="Male ciasto" VerticalAlignment="Center" Margin="168,27,169,28" FontSize="13.333" HorizontalAlignment="Center" FontFamily="Global User Interface" Checked="Male_ciasto_checked" Height="55"/>
+    			<RadioButton x:Name="RadioSrednia" Content="Średnie ciasto" VerticalAlignment="Center" Margin="10,27,0,28" HorizontalAlignment="Left" FontSize="13.333" Checked="Srednie_ciasto_checked" Height="55"/>
+                <RadioButton x:Name="RadioDuza" Content="Duże ciasto" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,27,158,28" Height="55" FontSize="13.333" Checked="Duze_ciasto_checked" Grid.ColumnSpan="2"/>
+    			<TextBlock x:Name="TekstCeny" HorizontalAlignment="Center" Margin="10,220,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Cena całości: " VerticalAlignment="Top" Width="485" Height="50" FontSize="24"/>
+                <Image x:Name="Pizza_base" HorizontalAlignment="Left" Height="234" VerticalAlignment="Top" Width="495" Source="ms-appx:///Assets/pizza.png" Margin="0,91,0,0" Grid.RowSpan="2"/>
+                <Image x:Name="pieczarki" HorizontalAlignment="Left" Margin="120,120,-363,0" Height="300" VerticalAlignment="Top" Width="910" Grid.Row="1" Source="ms-appx:///Assets/pieczarki.png" Grid.ColumnSpan="2"/>
+                <Image x:Name="ser" HorizontalAlignment="Left" Margin="120,120,-53,0" Height="300" VerticalAlignment="Top" Width="600" Grid.Row="1" Source="ms-appx:///Assets/ser1.png" Grid.ColumnSpan="2"/>
+                <Image x:Name="boczek" HorizontalAlignment="Left" Margin="120,120,-53,0" Height="300" VerticalAlignment="Top" Width="600" Grid.Row="1" Source="ms-appx:///Assets/boczek.png" Grid.ColumnSpan="2"/>
+                <Image x:Name="oliwki" HorizontalAlignment="Left" Margin="120,120,-53,0" Height="300" VerticalAlignment="Top" Width="600" Grid.Row="1" Source="ms-appx:///Assets/oliwki.png" Grid.ColumnSpan="2"/>
+                <Image x:Name="salami" HorizontalAlignment="Left" Margin="120,120,-53,0" Height="300" VerticalAlignment="Top" Width="600" Grid.Row="1" Source="ms-appx:///Assets/salami.png" Grid.ColumnSpan="2"/>
+                <Image x:Name="kurczak" HorizontalAlignment="Left" Margin="120,120,-53,0" Height="300" VerticalAlignment="Top" Width="600" Grid.Row="1" Source="ms-appx:///Assets/kurczak.png" Grid.ColumnSpan="2"/>
+                <Image x:Name="papryka" HorizontalAlignment="Left" Margin="120,120,-53,0" Height="300" VerticalAlignment="Top" Width="600" Grid.Row="1" Source="ms-appx:///Assets/papryka.png" Grid.ColumnSpan="2"/>
+    		</Grid>
+    	</StackPanel>
+    	<StackPanel Margin="476,0,0,0" RenderTransformOrigin="0.5,0.5">
+    		<StackPanel.RenderTransform>
+    			<CompositeTransform ScaleX="-1"/>
+    		</StackPanel.RenderTransform>
+    		<Grid Height="373" Margin="0,0,-0.167,0">
+    			<ListView x:Name="SkladnikiLV" Margin="4,4,0,0" ItemTemplate="{StaticResource Skladniki}" SelectionMode="Multiple" Tapped="Skladniki_changed_tapped"/>
+    		</Grid>
+    	</StackPanel>
     </Grid>
 </Page>
