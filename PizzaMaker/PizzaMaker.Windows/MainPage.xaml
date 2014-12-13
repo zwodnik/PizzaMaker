@@ -10,7 +10,7 @@
 		<DataTemplate x:Key="Skladniki">
 			<StackPanel Height="100" Width="500" Orientation="Horizontal">
                 <Image Width="100" Source="{Binding UriMale}"/>
-				<TextBlock TextWrapping="Wrap" Text="{Binding Nazwa}" Width="400"/>
+                <TextBlock TextWrapping="Wrap" Text="{Binding Nazwa}" FontFamily="A.C.M.E. Explosive" FontSize="28" VerticalAlignment="Center" Width="400" HorizontalAlignment="Center" Margin ="50,0,0,0"/>
 			</StackPanel>
 		</DataTemplate>
 	</Page.Resources>
@@ -23,16 +23,16 @@
     				<RowDefinition Height="5*"/>
     				<RowDefinition/>
     			</Grid.RowDefinitions>
-    			<RadioButton x:Name="RadioMala" Content="Male ciasto" VerticalAlignment="Center" Margin="0,0,610,0" FontSize="32" HorizontalAlignment="Center"/>
-    			<RadioButton x:Name="RadioSrednia" Content="Średnie ciasto" VerticalAlignment="Stretch" Margin="300,32,0,35" Width="300" HorizontalAlignment="Left" FontSize="32"/>
-    			<RadioButton x:Name="RadioDuza" Content="Duże ciasto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="597,32,0,0" Height="47" Width="313" FontSize="32"/>
-    			<StackPanel x:Name="ObrazekPizzy" HorizontalAlignment="Left" Height="549" VerticalAlignment="Top" Width="900" Grid.Row="1"/>
-    			<TextBlock x:Name="TekstCeny" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Cena całośći: " VerticalAlignment="Top" Width="890" Height="89" FontSize="64"/>
+    			<RadioButton x:Name="RadioMala" Content="Male ciasto" VerticalAlignment="Center" Margin="0,0,610,0" FontSize="32" HorizontalAlignment="Center" FontFamily="Global User Interface" Checked="Male_ciasto_checked"/>
+    			<RadioButton x:Name="RadioSrednia" Content="Średnie ciasto" VerticalAlignment="Stretch" Margin="300,32,0,35" Width="300" HorizontalAlignment="Left" FontSize="32" Checked="Srednie_ciasto_checked"/>
+                <RadioButton x:Name="RadioDuza" Content="Duże ciasto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="597,32,0,0" Height="47" Width="313" FontSize="32" Checked="Duze_ciasto_checked"/>
+    			<TextBlock x:Name="TekstCeny" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Cena całości: " VerticalAlignment="Top" Width="890" Height="89" FontSize="64"/>
+                <Image x:Name="Pizza_base" HorizontalAlignment="Left" Height="549" VerticalAlignment="Top" Width="910" Grid.Row="1" Source="ms-appx:///Assets/pizza.png"/>
     		</Grid>
     	</StackPanel>
     	<StackPanel Margin="910,0,10,0">
     		<Grid Height="770" Margin="0,0,0,0">
-    			<ListView x:Name="SkladnikiLV" Margin="4,4,0,0" ItemTemplate="{StaticResource Skladniki}" SelectionMode="Multiple"/>
+    			<ListView x:Name="SkladnikiLV" Margin="4,4,0,0" ItemTemplate="{StaticResource Skladniki}" SelectionMode="Multiple" Tapped="Skladniki_changed_tapped"/>
     		</Grid>
     	</StackPanel>
     </Grid>

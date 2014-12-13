@@ -8,11 +8,10 @@ namespace PizzaMaker
 {
     class CPizza
     {
-        private int Podstawa; // Cena podstawowa pizzy
-        private double Mnoznik; //pizzy
-        private int calkowity; //koszt pizzy
-
-
+        private int Podstawa = 15; // Cena podstawowa pizzy
+        public double Mnoznik; //pizzy
+        public int calkowity; //koszt pizzy
+        public int SumaSkladnikow = 0;
         
         public enum ENUMMnoznik
         {
@@ -21,7 +20,7 @@ namespace PizzaMaker
 
         public CPizza(ENUMMnoznik enumpizzy)
         {
-            this.Podstawa = 15;
+           
 
             if (enumpizzy == ENUMMnoznik.MALA)
             {
@@ -36,16 +35,37 @@ namespace PizzaMaker
                 this.Mnoznik = 1.4;
             }
 
-            //this.Mnoznik = 1;
-            //calkowity(); //nie ma jeszcze listviev
+            
+           // f_calkowity(); //nie ma jeszcze listviev
         }
 
         
 
-        private int f_calkowity(int suma_skladnikow, int podstawa)
+        private int f_calkowity(int podstawa)
         {
-            int suma = (int)((suma_skladnikow + podstawa) * Mnoznik);
+            int suma = (int)((SumaSkladnikow + podstawa) * Mnoznik);
             return suma;
+        }
+
+        public void ZmianaPizzy(ENUMMnoznik enumpizzy)
+        {
+            
+
+            if (enumpizzy == ENUMMnoznik.MALA)
+            {
+                this.Mnoznik = 1;
+            }
+            if (enumpizzy == ENUMMnoznik.SREDNIA)
+            {
+                this.Mnoznik = 1.2;
+            }
+            if (enumpizzy == ENUMMnoznik.DUZA)
+            {
+                this.Mnoznik = 1.4;
+            }
+
+            calkowity = f_calkowity(Podstawa);
+            // f_calkowity(); //nie ma jeszcze listviev
         }
 
        
